@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: projet-inscription-laravel
+    env: docker
+    dockerfilePath: Dockerfile
+    # On n’a plus besoin de buildCommand car Dockerfile l’intègre
+    buildCommand: ''
+    startCommand: "php -S 0.0.0.0:80 -t public"
+    branch: master
